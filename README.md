@@ -8,6 +8,11 @@ This project is a Python-based newsletter emails fetching, processing, and stora
 
 It's a backend script for a website template that automatically displays the newsletter articles on a Next.js frontend website. (The frontend is not included in this repository and is not yet developed)
 
+1. Run the `src/main.py`.
+2. The `src/main.py` will execute `src/utils/fetcher.py`, which checks if there is a new email from the newsletter sender. If yes, it checks the subject for a filter word; if no, it fetches the email content.
+3. The `src/main.py` will execute `src/utils/extractor.py`, which extracts the main title, main image, a snippet from the article text, and calculates the reading time.
+4. The `src/main.py` will execute `src/utils/uploader.py`, which uploads all the data to the Supabase table.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -16,7 +21,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Python 3.9 or higher
 - pip (Python package installer)
-- A Gmail account for fetching emails
 - A Supabase account for storing processed data
 
 ### Installing
@@ -36,20 +40,6 @@ pip install -r requirements.txt
 3. Update the `fetcher.py` file with the Gmail account credentials from which you want to fetch emails.
 4. Update the `test.py` file with the Gmail account credentials for sending test newsletters.
 
-## Running the Scripts
-
-1. Run the `main.sh` script to fetch, process, and store email data:
-
-```bash
-./main.sh
-```
-
-2. Run the `test.py` script to send a test newsletter:
-
-```python
-python3 test.py
-```
-
 ## Built With
 
 - Python
@@ -57,3 +47,4 @@ python3 test.py
 - imaplib
 - smtplib
 - Supabase
+
