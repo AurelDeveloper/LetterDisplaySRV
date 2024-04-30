@@ -35,10 +35,7 @@ pip install -r requirements.txt
 
 ### Configuration
 
-1. Rename the `modules` directory to your preferred name.
-2. Update the `.env.local` file with your Supabase URL and API key.
-3. Update the `fetcher.py` file with the Gmail account credentials from which you want to fetch emails.
-4. Update the `test.py` file with the Gmail account credentials for sending test newsletters.
+Update the `.env.local` file with your Supabase URL and API key.
 
 ## Built With
 
