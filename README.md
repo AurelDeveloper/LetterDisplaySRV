@@ -1,4 +1,4 @@
-# LetterDisplay
+# letter-display-database
 
 This project is a Python-based newsletter emails fetching, processing, and storage system. It fetches emails from a Gmail account, processes the HTML content of the emails, and stores the processed data in a JSON file. The data is then uploaded to a Supabase database.
 
