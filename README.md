@@ -2,6 +2,8 @@
 
 This project is a Python-based newsletter emails fetching, processing, and storage system. It fetches emails from a Gmail account, processes the HTML content of the emails, and stores the processed data in a JSON file. The data is then uploaded to a Supabase database.
 
+**Note**: The frontend is in `letter-display` repository.
+
 ## Explication
 
 It's a backend script for a website template that automatically displays the newsletter articles on a Next.js frontend website. (The frontend is not included in this repository and is not yet developed)
