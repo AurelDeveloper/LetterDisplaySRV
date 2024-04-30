@@ -42,6 +42,5 @@ Update the `.env.local` file with your Supabase URL and API key.
 - Python
 - BeautifulSoup
 - imaplib
-- smtplib
 - Supabase
 
