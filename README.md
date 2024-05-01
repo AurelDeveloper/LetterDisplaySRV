@@ -4,8 +4,6 @@ This project is a Python-based newsletter emails fetching, processing, and stora
 
 **Note**: The frontend is in `letter-display` repository.
 
-**Note**: The push failed, so the code hasn't been updated. I can only push the code by this evening.
-
 ## Explication
 
 It's a backend script for a website template that automatically displays the newsletter articles on a Next.js frontend website. (The frontend is not included in this repository and is not yet developed)
