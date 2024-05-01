@@ -1,8 +1,14 @@
 import json
 from bs4 import BeautifulSoup
 import datetime
-from models.article import Article
 from fetcher import fetch
+from Article import Article
+
+def calculate_readtime(content):
+    words = content.split()
+    num_words = len(words)
+    readtime = num_words / 250
+    return round(readtime)
 
 def extract(email_content):
     soup = BeautifulSoup(email_content, 'html.parser')
@@ -12,8 +18,9 @@ def extract(email_content):
     date = datetime.datetime.now().isoformat()
     content = str(soup)
     snippet = soup.find('p').text[:40] if soup.find('p') else None
+    readtime = calculate_readtime(content)
 
-    article = Article(title, image, date, content, snippet)
+    article = Article(title, image, date, content, snippet, readtime)
 
     with open('../articles.json', 'w') as json_file:
         json.dump(article.__dict__, json_file)
