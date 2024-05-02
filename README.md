@@ -3,6 +3,7 @@
 This project is a Python-based system for fetching, processing, and storing newsletter emails. It retrieves emails, processes the HTML content of the emails, and stores the processed data in a Supabase database.
 
 **Note:** The front-end is in `letter-display` repository. 
+**Note:** The project is finished but not the front-end.
 
 ## Files and their roles
 
