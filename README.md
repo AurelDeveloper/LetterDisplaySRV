@@ -22,7 +22,7 @@ This project is a Python-based system for fetching, processing, and storing news
 
 ## Roadmap
 
-- [ ] Improve the extractor.
+- [ ] Improve the `extractor.py`.
 - [ ] Implement a multi-newsletter fetcher and extractor.
 - [ ] Split and organize the Supabase tables.
 
