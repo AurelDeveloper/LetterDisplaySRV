@@ -20,6 +20,11 @@ This project is a Python-based system for fetching, processing, and storing news
 
 - `Article.py`: This file contains the class `Article`, the class is used to structure the data for each article. It has attributes for the `title`, `img`, `date`, `content`, `snippet`, `readtime`, `tag` of an article.
 
+## Roadmap
+
+- [ ] Improve the extractor.
+- [ ] Implement a multi-newsletter fetcher and extractor.
+- [ ] Split and organize the Supabase tables.
 
 ## How to run the project
 
