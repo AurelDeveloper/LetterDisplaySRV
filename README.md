@@ -4,8 +4,6 @@ This project is a Python-based system for fetching, processing, and storing news
 
 **Note:** The front-end is in `letter-display` repository. 
 
-**Note:** The project is finished but not the front-end.
-
 ## Files and their roles
 
 - `main.py`: This is the main entry point of the application. It runs the `fetcher.py` and `extractor.py` scripts.
