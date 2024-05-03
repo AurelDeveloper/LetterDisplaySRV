@@ -12,11 +12,14 @@ This project is a Python-based system for fetching, processing, and storing news
 
 - `fetcher.py`: This script fetches new emails from a specified Gmail account. It filters the emails based on the subject and uploads the content of the emails to a Supabase database.
 
-- `extractor.py`: This script downloads the latest email content from the Supabase database, extracts the necessary information from the email content, creates an `Article` object, and uploads the article data to the Supabase database.
+- `extractor.py`: This script downloads the latest email content from the Supabase database, extracts the necessary information from the email content, creates an `Article` object with the extracted information and the most common tag from a list of tags defined in the `.env` file, and uploads the article data to the Supabase database. If no tag is found in the content, a default tag defined in the `.env` file is used.
 
 - `supabase_client.py`: This script sets up the connection to the Supabase database using the URL and API key from the environment variables.
 
-- `.env`: This file contains environment variables such as the Supabase URL and API key, IMAP server details, email user and password, and non-newsletter keywords.
+- `.env`: This file contains environment variables such as the Supabase URL and API key, IMAP server details, email user and password, non-newsletter keywords, a list of tags, and a default tag.
+
+- `Article.py`: This file contains the class `Article`, the class is used to structure the data for each article. It has attributes for the `title`, `img`, `date`, `content`, `snippet`, `readtime`, `tag` of an article.
+
 
 ## How to run the project
 
@@ -43,7 +46,3 @@ python src/main.py
 - BeautifulSoup
 - imaplib
 - Supabase
-
-## Note
-
-The `Article` class is used to structure the data for each article. It has attributes for the title, image, date, content, snippet, and read time of an article. This class is defined in a separate file and imported into `extractor.py`.
