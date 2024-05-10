@@ -4,6 +4,8 @@ This project is a Python-based system for fetching, processing, and storing news
 
 **Note:** The front-end is in `letter-display` repository. 
 
+![Untitled design](https://github.com/AurelDeveloper/letter-display-database/assets/150530607/31157051-dbd4-4cbe-b133-a9cd3b5d75c6)
+
 ## Files and their roles
 
 - `main.py`: This is the main entry point of the application. It runs the `fetcher.py` and `extractor.py` scripts.
